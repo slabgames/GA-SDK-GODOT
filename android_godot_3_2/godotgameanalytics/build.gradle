@@ -1,11 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 35
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 30
+        targetSdkVersion 35
         versionCode 1
         versionName "1.0"
 
@@ -22,14 +22,20 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation fileTree(dir: "libs", include: ["*.jar|*.aar"])
     compileOnly project(':godot-lib.release')
-
-    implementation 'com.gameanalytics.sdk:gameanalytics-android:6.2.6'
-    implementation 'com.google.android.gms:play-services-appset:16.0.1'
-    implementation 'androidx.appcompat:appcompat:1.3.1'
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    compile 'com.google.android.gms:play-services-base:10.2.1'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+//    compile project(':gameanalytics')
+//    compile 'com.android.support:appcompat-v7:24.2.0'
+//    compile 'com.google.android.gms:play-services-base:10.2.1'
+//    compile 'com.android.support:appcompat-v7:24.2.0'
+//
+//    implementation 'com.gameanalytics.sdk:gameanalytics-android:+'
+//    implementation 'com.google.android.gms:play-services-appset:+'
+//    implementation 'androidx.appcompat:appcompat:+'
+//    testImplementation 'junit:junit:+'
+//    androidTestImplementation 'androidx.test.ext:junit:+'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:+'
 
 }
