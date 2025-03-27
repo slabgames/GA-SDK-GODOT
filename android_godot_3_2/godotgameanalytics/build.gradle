@@ -22,16 +22,16 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar|*.aar"])
-    compileOnly project(':godot-lib.release')
-    compile 'com.google.android.gms:play-services-base:10.2.1'
-    compile 'com.android.support:appcompat-v7:24.2.0'
+//    implementation fileTree(dir: "libs", include: ["*.jar|*.aar"])
+//    compileOnly project(':godot-lib.release')
+//    compile 'com.google.android.gms:play-services-base:10.2.1'
+//    compile 'com.android.support:appcompat-v7:24.2.0'
 //    compile project(':gameanalytics')
 //    compile 'com.android.support:appcompat-v7:24.2.0'
 //    compile 'com.google.android.gms:play-services-base:10.2.1'
 //    compile 'com.android.support:appcompat-v7:24.2.0'
 //
-//    implementation 'com.gameanalytics.sdk:gameanalytics-android:+'
+    implementation 'com.gameanalytics.sdk:gameanalytics-android:+'
 //    implementation 'com.google.android.gms:play-services-appset:+'
 //    implementation 'androidx.appcompat:appcompat:+'
 //    testImplementation 'junit:junit:+'
